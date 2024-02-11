@@ -35,7 +35,7 @@ have to create RBAC role first :
 
 #Create AAD App and Service Principal and assign RBAC Role
 
-_az ad sp create-for-rbac -n "azureapiflask" --role contributor --scopes /subscriptions/22-284d2-6a19-4781-87f8-5c564ec4fec9 --sdk-auth
+_az ad sp create-for-rbac -n "azureapiflask" --role contributor --scopes /subscriptions/22-284d2-6a19-4781-87f8-5c564ec4fec9 --json-auth
 
 "scopes" - is Azure subscription ID. The command returns JSON doc . Copy it to GitHub 
 
